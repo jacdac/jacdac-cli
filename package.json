@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/jacdac-cli.git"
+    "url": "git+https://github.com/jacdac/jacdac-cli.git"
   },
   "license": "MIT",
   "engines": {
@@ -31,11 +31,11 @@
     "jacdac",
     "cli"
   ],
-  "author": "Microsoft Corporation",
+  "author": "Jacdac Organization",
   "bugs": {
-    "url": "https://github.com/microsoft/jacdac-cli/issues"
+    "url": "https://github.com/jacdac/jacdac-cli/issues"
   },
-  "homepage": "https://github.com/microsoft/jacdac-cli#readme",
+  "homepage": "https://github.com/jacdac/jacdac-cli#readme",
   "dependencies": {
     "commander": "^9.4.1",
     "faye-websocket": "^0.11.4",

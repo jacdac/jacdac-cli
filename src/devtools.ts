@@ -35,7 +35,7 @@ function fetchProxy(localhost: boolean): Promise<string> {
     const protocol = localhost ? http : https
     const url = localhost
         ? "http://localhost:8000/devtools/proxy.html"
-        : "https://microsoft.github.io/jacdac-docs/devtools/proxy"
+        : "https://jacdac.github.io/jacdac-docs/devtools/proxy"
     console.debug(`fetch devtools proxy at ${url}`)
     return new Promise<string>((resolve, reject) => {
         protocol
@@ -50,7 +50,7 @@ function fetchProxy(localhost: boolean): Promise<string> {
                 res.on("end", () => {
                     if (localhost) {
                         body = body.replace(
-                            /https:\/\/microsoft.github.io\/jacdac-docs\/dashboard/g,
+                            /https:\/\/jacdac.github.io\/jacdac-docs\/dashboard/g,
                             "http://localhost:8000/dashboard"
                         )
                     }
